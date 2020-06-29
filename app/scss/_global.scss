@@ -16,6 +16,15 @@ li{
   padding: 0;
   list-style: none;
 }
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Museo_Sans_Cyrl';
+  background-image: url(../images/bg.jpg);
+  color: #282828;
+}
 .container{
   max-width: 81.25vw;
   padding: 0 0.78125vw;

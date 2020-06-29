@@ -2,3 +2,149 @@
 @import 'global';
 @import 'fonts';
 
+// start header
+
+.header{
+  padding-top: 1.6vw;
+}
+.header__top{
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo{
+  display: flex;
+  align-items: center;
+}
+.header__logo-text{
+  max-width: 150px;
+  margin-left: 2.08vw;
+  font-size: 14px;
+  font-weight: 300;
+}
+.header__info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__communication{
+  display: flex;
+  align-items: center;
+  flex-basis: 33vw;
+}
+.header__connection{
+  flex: 1 0 auto;
+}
+.header__loc{
+  display: flex;
+  align-items: center;
+}
+.header__loc-map{
+  width: 108px;
+  height: 108px;
+  background-position: center;
+}
+.header__loc-info{
+  flex-basis: 11.2vw;
+  span{
+    display: block;
+    font-weight: 700;
+  }
+}
+.header__phone{
+  font-weight: 500;
+  span{
+    padding-left: 14px;
+    position: relative;
+    &::before{
+      content: '';
+      border-radius: 50%;
+      width: 6px;
+      height: 6px;
+      background-color: rgb(39, 178, 75);
+      box-shadow: 0px 0px 7px 0px rgba(79, 160, 55, 0.61);
+      position: absolute;
+      top: 5px;
+      left: 0;
+    }
+  }
+  position: relative;
+  padding-left: 45px;
+  font-size: 12px;
+  margin-bottom: 0.78125vw;
+  &::before{
+    content: '';
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background-image: url(../images/phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  a{
+    margin-top: 5px;
+    font-size: 24px;
+    display: block;
+    color: #282828;
+  }
+}
+.header__worktime{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 45px;
+  font-size: 16px;
+  &::before{
+    content: '';
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    border-radius: 50%;
+    background-image: url(../images/watch.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  span{
+    font-weight: 700;
+  }
+}
+.header__communication-link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 229px;
+  height: 62px;
+  background-color: rgb(254, 252, 251);
+  position: relative;
+  padding-left: 20px;
+  &::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+    background-image: url(../images/cal.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &::after{
+    content: '';
+    border-radius: 30px;
+    background-color: rgb(235, 234, 234);
+    width: 229px;
+    height: 62px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+// end header
+
+
