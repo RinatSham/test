@@ -320,6 +320,13 @@
 }
 
 @media (max-width: 590px){
+  .arrow-down{
+    bottom: 0.5rem;
+    width: 5.8rem;
+  }
+  .card::before{
+    bottom: -3.5rem;
+  }
   .programm-form .jq-selectbox__select {
     font-size: 1.1rem;
   }
@@ -357,6 +364,12 @@
 }
 
 @media (max-width: 480px){
+  .arrow-down {
+    bottom: -0.5rem;
+  }
+  .card::before {
+    height: 7.02rem;
+  }
   .header__burger div {
     width: 20px;
   }

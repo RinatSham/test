@@ -682,13 +682,18 @@
 .arrow-down{
   position: absolute;
   bottom: 3.5vw;
-  left: 46.6vw;
+  left: 50%;
   z-index: 6;
   width: 6.8vw;
+  transform: translateX(-50%);
   img{
     max-width: 100%;
     max-height: 100%;
   }
 }
+
+
+
+
 
 @import 'media';
