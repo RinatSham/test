@@ -1,5 +1,6 @@
 html{
   box-sizing: border-box;
+  font-size: 10px;
 }
 *,
 *::before,
@@ -23,10 +24,18 @@ p, h1, h2, h3, h4, h5, h6{
 body{
   font-family: 'Museo_Sans_Cyrl';
   background-image: url(../images/bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
   color: #282828;
 }
 .container{
   max-width: 81.25vw;
   padding: 0 0.78125vw;
   margin: 0 auto;
+}
+.wrapper{
+  position: relative;
+  overflow: hidden;
 }

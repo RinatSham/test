@@ -3,54 +3,203 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1">
   <title>Document</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <div class="header__logo">
-          <a href="" class="logo">
-            <img src="images/logo.png" alt="logo">
-          </a>
-          <p class="header__logo-text">
-            Студия депиляции и
-            массажный кабинет<br />
-            в Бресте
-          </p>
-        </div>
-        <div class="header__info">
-          <div class="header__communication">
-            <div class="header__loc">
-              <a href="#" class="header__loc-map" style="background-image: url(images/map.png);"></a>
-              <div class="header__loc-info">
-                <span>Мы находимся в центре:</span>
-                г. Брест, ул. Гоголя, д.65
-                <a href="#">СМОТРЕТЬ НА КАРТЕ</a>
+  <div class="wrapper">
+    <div class="arrow-down">
+      <img src="images/arrow-down.png" alt="">
+    </div>
+    <div class="parallax-one"><img src="images/parallax-1.png" alt=""></div>
+    <div class="parallax-two"><img src="images/parallax-2.png" alt=""></div>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__logo">
+            <a href="" class="logo">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <p class="header__logo-text">
+              Студия депиляции и<br />
+              массажный кабинет<br />
+              в Бресте
+            </p>
+          </div>
+          <div class="header__loc">
+            <a href="#" class="header__loc-map"">
+                <img src=" images/map.png" alt="">
+            </a>
+            <div class="header__loc-info">
+              <span>Мы находимся в центре:</span>
+              г. Брест, ул. Гоголя, д.65
+              <a href="#"><span>СМОТРЕТЬ НА КАРТЕ</span>
+              </a>
+              <div class="header__map"><iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A58746907a20e1f432a1421c04817e3f86e8b9ff95c3f087e2973bcba4686c119&amp;source=constructor"
+                  width="100%" height="100%" frameborder="0"></iframe>
               </div>
             </div>
-            <div class="header__connection">
-              <div class="header__phone">
+          </div>
+          <div class="header__connection">
+            <div class="header__phone">
+              <div class="header__phone-img">
+                <img src="images/phone.png" alt="">
+              </div>
+              <div class="header__phone-inner">
                 <span>Звоните, мы сейчас работаем</span>
                 <a href="tel:+375333822499">
                   +375 33 382 24 99
                 </a>
               </div>
-              <div class="header__worktime">
+            </div>
+            <div class="header__worktime">
+              <div class="header__worktime-img">
+                <img src="images/watch.png" alt="">
+              </div>
+              <div class="header__worktime-inner">
                 Пн-Вс &nbsp <span> 9:00-21:00</span>
               </div>
             </div>
           </div>
-          <a class="header__communication-link" href="#">Записаться онлайн</a>
+          <div class="header__burger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <a class="header__communication-link" data-fancybox data-src="#modal" href="javascript:;">
+            Записаться онлайн
+          </a>
         </div>
       </div>
+      <div class="header__menu">
+        <div class="container">
+          <nav class="menu">
+            <ul class="menu__list">
+              <li>
+                <a class="menu__list--active" href="#">Главная</a>
+              </li>
+              <li>
+                <a href="#">Шугаринг и депиляция воском</a>
+              </li>
+              <li>
+                <a href="#">Антицеллюлитный массаж</a>
+              </li>
+              <li>
+                <a href="#">Классический массаж</a>
+              </li>
+              <li>
+                <a href="#">Обучение</a>
+              </li>
+              <li>
+                <a href="#">Косметика для мастеров</a>
+              </li>
+              <li>
+                <a href="#">Статьи</a>
+              </li>
+              <li>
+                <a href="#">О студии</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="card">
+        <div class="container">
+          <div class="card__inner">
+            <div class="card__title">
+              <span>Хотите избавиться от</span>
+              <span>нежелательных волос</span>
+              <span>или нужен сеанс</span>
+              <span>антицеллюлитного массажа?</span>
+            </div>
+            <ul class="card__list">
+              <li>депиляция воском и Шугаринг;</li>
+              <li>профессиональные сертифицированные мастера;</li>
+              <li>работаем и с женщинами, и с мужчинами;</li>
+              <li>результат уже после первой процедуры.</li>
+            </ul>
+            <a class="card__link" data-fancybox data-src="#modal" href="javascript:;">
+              <div class="card__link-text">
+                <span>Получить карту</span>
+                <span>клиента бесплатно</span>
+              </div>
+              <img src="images/Branch.png" alt>
+            </a>
+          </div>
+        </div>
+        <div class="card__item">
+          <img src="images/card.png" alt="">
+          <div class="card__item-help">
+            <img src="images/i.png" alt="">
+          </div>
+          <div class="card__item-hover">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna
+          </div>
+        </div>
+        <div class="card__woman-img">
+          <img src="images/woman.png" alt="">
+        </div>
+        
+      </section>
+    </main>
+  </div>
+
+  <div id="modal">
+    <div class="book-img">
+      <img src="images/book.png" alt="">
     </div>
-  </header>
+    <div class="programm-title">
+      <span>Получите</span> программу обучения
+    </div>
+    <div class="programm-text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+    </div>
+    <form class="programm-form" method="GET">
+      <label for="">
+        <select name="programs" id="">
+          <option value="">Повышение квалификации</option>
+          <option value="">Повышение квалификации</option>
+          <option value="">Повышение квалификации</option>
+        </select>
+      </label>
+      <label for="">
+        <input type="text" name="name" placeholder="Ваше имя" required>
+      </label>
+      <label for="">
+        <input type="tel" name="phone" placeholder="Ваш номер телефона" required>
+      </label>
+      <button class="programm-form__btn" type="submit" data-fancybox data-src="#selectableModal" href="javascript:;">
+        Получить программу
+        <img src="images/plant.png" alt="">
+      </button>
+    </form>
+  </div>
+
+  <div id="selectableModal">
+    <div class="accept-img">
+      <img src="images/accept1.png" alt="">
+    </div>
+    <div class="accept-text">
+      <span>Ваш заказ принят.</span>
+      Ожидайте звонка
+    </div>
+    <div class="petal-one"><img src="images/petal-1.png" alt=""></div>
+    <div class="petal-two"><img src="images/petal-2.png" alt=""></div>
+  </div>
+
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>
